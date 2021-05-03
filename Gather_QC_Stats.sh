@@ -1,3 +1,5 @@
+#Created by Joe Sarro 03-2021
+#pulls info from fastqc report and prints number of reads and sequence duplication status
 for i in *_fastqc.zip
 do
 echo "Unziping $i"

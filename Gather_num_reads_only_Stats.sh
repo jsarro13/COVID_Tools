@@ -1,3 +1,5 @@
+#Created by Joe Sarro 04-2021
+#pulls info from fastqc report and prints number of reads in a csv file
 for i in *R1*_fastqc.zip
 do
 echo "Unziping $i"

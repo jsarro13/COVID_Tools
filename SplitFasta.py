@@ -2,6 +2,7 @@
 #SplitFasta 04-2021
 #Written by Joseph Sarro
 #This script splits a multifasta file to filter out seqeucnes that have been flagged as bad. Two arguments are needed 1) a fasta file 2) a comma seperated list of seqeunces to ommit
+#edits to include samples in comma list and ommit rest 05-2021
 import sys
 import os
 #import fasa and genrate list of names
@@ -14,8 +15,8 @@ Seqs=seqs.split(",")
 #print sc
 fasta = os.path.splitext(Fasta)[0]
 f = open(Fasta, 'r')
-ff = open(fasta+'.final.fa','w')
-df= open(fasta+'.failed.fa','w')
+ff = open(fasta+'.ommit.fa','w')
+df= open(fasta+'.final.fa','w')
 firstline=True
 keep=True
 for lines in f:

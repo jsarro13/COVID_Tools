@@ -24,11 +24,11 @@ for lines in ff:
 	else:
 		fields = lines.split(",")
 		ID=fields[0]
-		Cov=fields[7]
+		Cov=fields[8]
 	#	print ID +" " + Cov
 		Date=""
 		#this file must contain UND ID in first column and date in second
-		sur=open('/Users/joe/Covid_seq/Spreadsheets/Positives_Since_Jan_1.csv','r')
+		sur=open('/Users/joe/Covid_seq/Spreadsheets/Saliva_Case_Export_2021-07-0614_17_13.982120.csv','r')
 		for linez in sur:
 			fieldz = linez.split(",")
 			IDZ=fieldz[0]
